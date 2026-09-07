@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maris Usis — Firmware and systems engineer</title>
+  <meta name="description" content="Maris Usis is a firmware and systems engineer in Columbus, Ohio. C and Rust for solid-state power infrastructure at Vertiv. Low-latency streaming, embedded debugging, reverse engineering.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='12'%20fill='%23171717'/%3E%3Ctext%20x='32'%20y='43'%20font-family='monospace'%20font-size='32'%20fill='%23ffffff'%20text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+  <meta property="og:title" content="Maris Usis — Firmware and systems engineer">
+  <meta property="og:description" content="C and Rust for solid-state power infrastructure at Vertiv. Low-latency streaming, embedded debugging, reverse engineering.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://usis.dev/">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Maris Usis — Firmware and systems engineer">
+  <meta name="twitter:description" content="C and Rust for solid-state power infrastructure at Vertiv. Low-latency streaming, embedded debugging, reverse engineering.">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="hero">
+    <h1>Maris Usis</h1>
+    <p class="tagline">Firmware and systems engineer. C and Rust for solid-state power infrastructure at Vertiv. Experience in reverse engineering, embedded debugging, system design, and networking.</p>
+    <p class="location">Columbus, Ohio</p>
+    <nav aria-label="Profile and contact links">
+      <ul class="inline-links">
+        <li><a href="https://github.com/marisusis">GitHub</a></li>
+        <!-- TODO: LinkedIn URL was not provided; replace href below with personal LinkedIn profile URL -->
+        <li><a href="#linkedin-url-todo">LinkedIn</a></li>
+        <li><a href="https://orcid.org/0009-0004-3030-9081">ORCID</a></li>
+        <li><a href="mailto:marisusis0@protonmail.com">marisusis0@protonmail.com</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="mirror-heading" class="featured">
+      <h2 id="mirror-heading">Featured project: <code>Mirror</code></h2>
+      <p>Low-latency screen streaming, macOS to any platform, written in Rust.</p>
+      <p><code>ScreenCaptureKit</code> capture &#8594; custom <code>VideoToolbox</code> FFI (<code>H.264</code>, low-latency rate control) &#8594; <code>QUIC</code> transport via <code>quiche</code>/<code>mio</code>, one unidirectional stream per frame to avoid head-of-line blocking &#8594; <code>winit</code> + <code>wgpu</code> client with <code>YUV</code>-to-<code>RGB</code> conversion in a <code>WGSL</code> shader.</p>
+      <!-- TODO: featured-project repo URL was not provided; add Mirror repo link here if one exists -->
+      <figure class="demo">
+        <video controls autoplay muted loop playsinline preload="metadata" poster="assets/mirror-poster.jpg" aria-label="Demo video: Mirror low-latency screen streaming from macOS">
+          <source src="assets/mirror-demo.mp4" type="video/mp4">
+          <p>Demo video not included in this copy (<code>assets/mirror-demo.mp4</code>).</p>
+        </video>
+        <figcaption>Demo: <code>Mirror</code> streaming a macOS screen to a remote client.</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Selected projects</h2>
+      <ul class="compact">
+        <li><code>sdr-scraper</code> — async Rust collector pulling 50+ simultaneous WebSocket software-defined-radio endpoints (<code>tokio</code>, <code>tokio-tungstenite</code>). <a href="https://github.com/marisusis/sdr-scraper">repo</a></li>
+        <li><code>HC37</code> NOR flash driver for <code>OpenOCD</code> (C) — reverse-engineered the flash protocol on an HF radio, enabling firmware extraction. <!-- TODO: repo URL for HC37 NOR flash driver was not provided --></li>
+        <li><code>route-suite</code> — graph-based <code>ASIO</code> audio routing on Windows (C++), sub-7ms latency between clients. <a href="https://github.com/marisusis/route-suite">repo</a></li>
+        <li><code>telugu-to-english-with-transformers</code> — transformer from scratch in <code>PyTorch</code>, 27.2 <code>BLEU</code> on 5M sentence pairs. <a href="https://github.com/marisusis/telugu-to-english-with-transformers">repo</a></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="pubs-heading">
+      <h2 id="pubs-heading">Publications</h2>
+      <ul class="compact">
+        <li>Detecting changes in along-path HF propagation during the April 2024 total solar eclipse with radio amateurs and low-cost instrumentation. <cite>Frontiers in Astronomy and Space Sciences</cite>, 2026. <!-- TODO: DOI for the 2026 Frontiers eclipse paper was not provided --></li>
+        <li>Hydropower and environmental flow management: System-level trade-offs at Glen Canyon Dam. <cite>Journal of Hydrology: Regional Studies</cite>, 2025. <a href="https://doi.org/10.1016/j.ejrh.2025.102624">doi:10.1016/j.ejrh.2025.102624</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Maris Usis — Columbus, Ohio · <a href="https://github.com/marisusis">github.com/marisusis</a> · <a href="https://orcid.org/0009-0004-3030-9081">orcid.org/0009-0004-3030-9081</a></p>
+  </footer>
+</body>
+</html>
