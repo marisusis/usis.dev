@@ -21,7 +21,7 @@
 
   <header class="hero">
     <h1>Maris Usis</h1>
-    <p class="tagline">Firmware and systems engineer. C and Rust for solid-state power infrastructure at Vertiv. Experience in reverse engineering, embedded debugging, system design, and networking.</p>
+    <p class="tagline">Firmware and systems engineer. C and Rust for solid-state power infrastructure at Vertiv. Experience in reverse engineering, embedded debugging, system design, and networking. Interested in getting involed in the open-source community.</p>
     <p class="location">Columbus, Ohio</p>
     <nav aria-label="Profile and contact links">
       <ul class="inline-links">
@@ -52,7 +52,16 @@
     <section aria-labelledby="projects-heading">
       <h2 id="projects-heading">Some of my projects</h2>
       <ul class="compact">
-        <li><strong>Mirror</strong>: a low-latency, gaming-performance, accelerated headless remote desktop solution built on QUIC and Linux. Work-in-progress, demo soon!</li>
+        <li><strong>Mirror</strong>: a low-latency, gaming-performance, accelerated headless remote desktop solution built on QUIC and Linux. Work-in-progress, will open source once end-to-end prototype with headless Linux host is functional.
+      <figure class="demo">
+        <video controls autoplay muted loop playsinline preload="metadata" poster="assets/mirror-poster.jpg" aria-label="Demo video: Mirror low-latency screen streaming from macOS">
+          <source src="output.mp4" type="video/mp4">
+          <p>Demo video not included in this copy (<code>assets/mirror-demo.mp4</code>).</p>
+        </video>
+            <figcaption>Demo: Streaming a MacOS host to an iOS client (only had my laptop and phone at the time of recording). Uses the same <code>wgpu</code> pipeline and networking code as my desktop implementation, but we render to a <code>SurfaceTargetUnsafe::CoreAnimationLayer</code>. Used Claude Opus 5 to scaffold the iOS-specific code.</figcaption>
+      </figure>
+        </li>
+
         <li><strong>sdr-scraper</strong>: async Rust collector recording from 50+ simultaneous WebSocket software-defined-radio endpoints (<code>tokio</code>, <code>tokio-tungstenite</code>). <a href="https://github.com/marisusis/sdr-scraper">repo</a></li>
         <li><strong>HC37 NOR flash driver for OpenOCD</strong>: implemented a flash backend in OpenOCD for the chip in an off-the-shelf HF radio, enabling firmware extraction and reverse engineering. (C, OpenOCD, gdb) <!-- TODO: repo URL for HC37 NOR flash driver was not provided --></li>
         <li><strong>route-suite</strong>: graph-based <code>ASIO</code> audio routing on Windows (C++), sub-7ms latency between clients. (C, C++) <a href="https://github.com/marisusis/route-suite">repo</a></li>
